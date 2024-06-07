@@ -119,5 +119,22 @@ int main() {
 ```
 ## 링크드리스트
 ```
+#include <stdio.h>
+#include <stdlib.h>
 
+int main() {
+    int *vector = NULL;
+    int size = 0;
+
+    for(int i=0;i<10;i++){
+        size++;
+        vector = realloc(vector,size*4);
+        vector[size-1] = i;
+    }
+
+    for(int i=0;i<10;i++){
+        printf("%d ",vector[i]);
+    }
+    return 0;
+}
 ```
