@@ -100,26 +100,6 @@ int dequeue(){
 ## 백터
 ```
 #include <stdio.h>
-
-struct node{
-    int data;
-    struct node* next;
-};
-
-int main() {
-    struct node a,b,c;
-    a.data = 100;
-    a.next = &b;
-    b.data = 200;
-    b.next = &c;
-    c.data = 300;
-    c.next = NULL;
-    return 0;
-}
-```
-## 링크드리스트
-```
-#include <stdio.h>
 #include <stdlib.h>
 
 int main() {
@@ -135,6 +115,27 @@ int main() {
     for(int i=0;i<10;i++){
         printf("%d ",vector[i]);
     }
+    return 0;
+}
+```
+
+## 링크드리스트
+```
+#include <stdio.h>
+
+struct node{
+    int data;
+    struct node* next;
+};
+
+int main() {
+    struct node a,b,c;
+    a.data = 100;
+    a.next = &b;
+    b.data = 200;
+    b.next = &c;
+    c.data = 300;
+    c.next = NULL;
     return 0;
 }
 ```
